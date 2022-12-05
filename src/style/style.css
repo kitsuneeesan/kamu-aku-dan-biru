@@ -1,4 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
+
 * {
+    font-family: "M PLUS Rounded 1c", sans-serif;
     padding: 0px;
     margin: 0px;
+}
+
+body {
+    margin: 20px;
+    background-color: #f8f9fc;
+}
+
+header {
+    display: inline;
+}
+
+.darkmode {
+    background-color: #292929;
+}
+
+.darkmode h1 {
+    color: #f8f9fc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.darkmode p {
+    color: #f8f9fc;
+}
+
+p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.wpmoon {
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 20px;
+    top: 0%;
+    right: 0%;
+    transform: translate(0%, 0%, 0%);
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .wpmoon {
+        position: absolute;
+        margin-right: 20px;
+        top: 0%;
+        right: 0%;
+        transform: translate(0%, 0%, 0%);
+    }
 }
