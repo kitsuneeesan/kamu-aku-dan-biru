@@ -1,5 +1,7 @@
 async function getMessages(type) {
-    const { messages } = await import(`./text/${type}.js`);
+    const { messages } = await import(`./text/${type}.js`).catch((err) => {
+        return import('./text/default.js');
+    });
     return messages;
 }
 
@@ -39,6 +41,7 @@ function typewriter(messages) {
 }
 
 window.onload = async () => {
+    console.info("made with ❤️ by mas nan");
     startTime();
     await getType().then((type) => {
         var title = document.getElementById('title');

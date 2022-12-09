@@ -1,0 +1,1 @@
+export const messages = ['i love you'];
