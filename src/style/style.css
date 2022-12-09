@@ -33,7 +33,7 @@ h1 {
 }
 
 p {
-    margin-top: 10px;
+    font-size: 14px;
     text-align: justify;
 }
 
@@ -44,6 +44,26 @@ p {
     top: 0%;
     right: 0%;
     transform: translate(0%, 0%, 0%);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 95vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-container .card {
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.darkmode .flex-container .card {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width: 1000px) {

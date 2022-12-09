@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
     <link rel="manifest" href="src/favicon/site.webmanifest">
     <link rel="stylesheet" href="src/style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -17,13 +18,18 @@
             <h3 id="moon" onclick="toggleDarkMode()">🌚</h3>
         </div>
     </header>
-    <div>
-        <h1 id="title"></h1>
-        <p id="message"></p>
+    <br />
+    <div class="flex-container">
+        <div class="card animate__animated animate__slideInLeft" id="main-card">
+            <!-- <img id="nasa-image" style="width:100%"> -->
+            <!-- <p id="message"></p> -->
+        </div>
     </div>
 </body>
 
 <script src="./src/js/main.js" type="module"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
     if (localStorage.getItem("preferredTheme") == "dark") toggleDarkMode();
 
