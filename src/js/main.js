@@ -2,6 +2,12 @@ const fireworks = ['⠄', '⡢', '⢑', '⠈', '⠀', '⢀', '⣠', '⣤', '⡶'
     types_to_show_image = ['dGlyZWQ', 'bG9uZWx5'];
 let fire_index = 0;
 
+function isPipitDay(date) {
+    const pipit_date = `1312${date.getFullYear()}`,
+        key = `${date.getDate()}${date.getMonth() + 1}${date.getFullYear()}`;
+    return [pipit_date === key, key];
+}
+
 function startTime() {
     document.title = fireworks[fire_index];
     setTimeout(startTime, 200);
@@ -49,25 +55,57 @@ async function getMessages(type) {
     return messages;
 }
 
-function typewriter(messages) {
-    let img = document.createElement('p');
-    img.setAttribute('id', 'message');
-    document.getElementById("main-card").appendChild(img);
+function getRandomMessage(messages) {
+    const random_index = Math.floor(Math.random() * messages.length) + 0;
+    return messages[random_index];
+}
 
-    messages.then((messages) => {
-        let index = 0;
-        const random_index = Math.floor(Math.random() * messages.length) + 0,
-            speed = 50;
-        function writer() {
-            const text = messages[random_index] //+ `gambar di atas itu foto astronomi hari ini btw. judulnya ${data.title}. aku egk tau foto nya seperti apa sih tp semoga kamu suka`;
-            if (index < text.length) {
-                document.getElementById("message").innerHTML += text.charAt(index);
-                index++;
-                setTimeout(writer, speed);
+function typewriter(message, paragraph_id) {
+    let p = document.createElement('p');
+    p.setAttribute('id', paragraph_id);
+    document.getElementById("main-card").appendChild(p);
+
+    let index = 0;
+    const text = message //+ `gambar di atas itu foto astronomi hari ini btw. judulnya ${data.title}. aku egk tau foto nya seperti apa sih tp semoga kamu suka`;
+    if (text === '') {
+        document.getElementById(paragraph_id).innerHTML += '<br/>';
+    }
+
+    function writer() {
+        if (index < text.length) {
+            document.getElementById(paragraph_id).innerHTML += text.charAt(index);
+            index++;
+            setTimeout(writer, 100);
+        }
+    }
+
+    writer();
+}
+
+async function displayMessage(type) {
+    const messages = await getMessages(type);
+    if (type === 'YmlydGhkYXk') {
+        const [is_pipit_day, key] = isPipitDay(new Date());
+        if (is_pipit_day) {
+            let audio = document.getElementById("myAudio");
+            audio.play();
+            let paragraph_index = 0;
+            for (const message of messages[key]) {
+                const timeout = 100*message[0].length;
+                typewriter(message[0], `paragraph-${paragraph_index}`);
+                paragraph_index++;
+                await new Promise(resolve => setTimeout(resolve, timeout+1000)); // wait 1 second
             }
         }
-        writer();
-    });
+        else {
+            let message = messages['default'];
+            typewriter(message, 'paragraph-0');
+        }
+
+    } else {
+        const message = getRandomMessage(messages);
+        typewriter(message, 'paragraph-0');
+    }
 }
 
 window.onload = async () => {
@@ -76,5 +114,5 @@ window.onload = async () => {
     const type = await getType();
     await new Promise(resolve => setTimeout(resolve, 1000)); // wait 1 second
     showImage(type);
-    typewriter(getMessages(type));
+    displayMessage(type);
 }
