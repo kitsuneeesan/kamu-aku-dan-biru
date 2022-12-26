@@ -87,8 +87,6 @@ async function displayMessage(type) {
     if (type === 'YmlydGhkYXk') {
         const [is_pipit_day, key] = isPipitDay(new Date());
         if (is_pipit_day) {
-            let audio = document.getElementById("myAudio");
-            audio.play();
             let paragraph_index = 0;
             for (const message of messages[key]) {
                 const timeout = 100*message[0].length;

@@ -1,4 +1,5 @@
 // <!-- birthday -->
+
 export
     const messages = {
         13122022: [
@@ -16,5 +17,52 @@ export
             ["with a lot of love,"],
             ["Mas Nan <3"],
         ],
-        default: 'ihhhh Hari ini bukan hari ulang tahun kamu tau. tapi terima kasih sudah berkunjung! >_<',
+        13122023: [
+            ["A very happy 23rd birthday, love."],
+            ["Aku ingin tahu apakah Kamu memiliki harapan untuk tahun yang baru dalam hidup Kamu."]
+            ["Dalam Surat ini, Aku ingin mengirimkan doa terbaik untukmu, semoga Tuhan menjadikan Kamu tumbuh sebagai pribadi yang bijaksana dan belajar banyak hal baik untuk mencapai semua tujuan dan aspirasi Kamu"],
+            [""],
+            ["Aku pernah mendengar bahwa ulang tahun adalah tanggal khusus untuk meninjau tahun-tahun sebelumnya. dan Aku tidak ingin membiarkan hari berlalu tanpa mengingatkan betapa Aku mencintaimu dan betapa bahagianya Aku memilikimu pada saat usia Kamu 22 tahun!"]
+            ["Terima Kasih telah memilihku untuk menjadi bagian dari hidupmu! Kamu adalah permataku, dan Aku mencintaimu lebih dari yang bisa kukatakan"],
+            [""],
+            ["Maafkan Aku jika hingga saat ini Aku belum bisa memberikan apa yang Kamu inginkan, Percayalah Aku sudah melAkukan yang terbaik. tapi Aku akan terus berusaha menjadi yang terbaik untukmu."],
+            [""],
+            ["Sekali lagi selamat ulang tahun, Sayang!"],
+            [""],
+            ["with a lot of love,"],
+            ["Mas Nan <3"],
+        ],
+        13122024: [
+            ["A very happy 24th birthday, love."],
+            ["Aku berharap bahwa ulang tahun ini bukan yang paling istimewa karena Kamu sudah memiliki banyak yang sangat istimewa lainnya heheheh.."],
+            ["tetapi Aku berharap Kamu menikmati hari ini dan memanfaatkannya sebaik mungkin. Ini adalah satu hari dalam setahun, dan itu harus dihargai!"],
+            [""],
+            ["Apakah Kamu ingat tahun kemarin Aku menuliskan bahwa hari ulang tahun adalah tanggal khusus untuk meninjau tahun-tahun sebelumnya?"],
+            ["Jadi Aku minta tolong Kamu untuk melakukan hal yang sama: meluangkan satu hari dalam setahun (atau bahkan lebih) dan benar-benar meninjaunya: coba ingat hari pertama kita bersama, hari-hari yang bahagia, atau hari di mana Kamu merasa sedih."],
+            ["Ingatlah semua hal yang telah Kamu lakukan dan semua hal yang telah kita alami. Kita tidak boleh melupakan setiap hal karena itulah yang menjaga suatu hubungan atau sebagai bukti kalau kita sudah melewati hari-hari yg bahagia atau menyedihkan hingga kita berada di sini sampai hari ini."],
+            [""],
+            ["Terima Kasih sudah bertahan hingga saat ini. Terima Kasih untuk setiap perjalanan yang kita lakukan, untuk setiap malam bersama, setiap makan malam, setiap minuman, dan untuk setiap cerita-cerita yang Kamu bagikan serta setiap momen penting yang kita ciptakan bersama."],
+            ["jangan lupakan Aku!"],
+            [""],
+            ["with a lot of love,"],
+            ["Mas Nan <3"],
+        ],
+        13122026: [
+            ["A very happy 26th birthday, love."],
+            ["Aku penasaran apakah tahun ini Kamu masih bersamAku? dan apakah Kamu membuka surat ini?"],
+            ["dan mungkin Aku pernah berkata kepadamu untuk membuka surat ini pada setiap hari ulang tahunmu. Aku sangat berharap Kamu membuka dan membacanya. jadi mohon untuk membukanya ya!"],
+            [""],
+            ["ngomong-ngomong saat Aku membuat surat ini Aku sedang mendengarakan lagu yang bagus dan Aku ingin Kamu mendengarkannya juga."],
+            ["kodaline - high hopes"],
+            [""],
+            ["Karena ini adalah surat ulang tahunmu, Aku ingin mengucapkan selamat ulang tahun!"],
+            ["tapi sejujurnya mulai sekarang Aku ragu untuk menggunakan kata-kata tentang cinta dan tentang perasaanku. Aku tidak tahu bagaimana hubungan kita di masa depan. jadi mulai sekarang Aku akan mengatakan perasaanku dengan kata-kata yang lebih sederhana."],
+            [""],
+            ["Selamat ulang tahun untukmu!"],
+            ["Semoga "],
+            [""],
+            ["with a lot of love,"],
+            ["Mas Nan <3"],
+        ],
+        default: 'ihhhh Hari ini bukan hari ulang tahun Kamu tau. tapi Terima Kasih sudah berkunjung! >_<',
     };

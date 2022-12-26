@@ -1,4 +1,5 @@
 // <!-- mad with me -->
+
 export
     const messages = [
         "semoga marah mu kali ini bukan karena kesalahan aku yang sudah sering kali terulang. dan kalau memang ternyata karena itu. tolong kamu jangan sampai capek untuk kasih tau aku! maafin aku ya dek. aku sayang banget sama kamu.",
