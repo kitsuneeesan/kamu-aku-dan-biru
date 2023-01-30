@@ -1,6 +1,6 @@
 const fireworks = ['⠄', '⡢', '⢑', '⠈', '⠀', '⢀', '⣠', '⣤', '⡶', '⠞', '⠋', '⠁', '⠀', '⠈', '⠙', '⠳', '⣆', '⡀', '⠀', '⠆', '⡷', '⣹', '⢈', '⠀', '⠐', '⠪', '⢅', '⡀', '⠀'],
     types_to_show_image = ['dGlyZWQ', 'bG9uZWx5'];
-let fire_index = 0;
+var fire_index = 0;
 
 function isPipitDay(date) {
     const pipit_date = `1312${date.getFullYear()}`,
@@ -17,19 +17,17 @@ function startTime() {
     }
 }
 
-async function getNasaImage() {
+async function getNasaImage(img) {
     const url = "https://api.nasa.gov/planetary/apod?api_key=OVVecEPW04oc6VHUtdB6Bg5KKjUUlJ8nef5CBxge";
-    let title = "",
-        status = true;
     await fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            document.getElementById("nasa-image").src = data.url;
-            title = data.title;
+            img.src = data.url;
+            let title = `btw ini untuk gambar astronomi hari ini. judulnya '${data.title}'. aku egk tau foto nya seperti apa tp semoga kamu suka :)`;
+            img.addEventListener('click', () => alert(title));
         }).catch((err) => {
-            status = false;
+            console.log(err);
         });
-    return [status, title];
 }
 
 function showImage(type) {
@@ -38,7 +36,7 @@ function showImage(type) {
         img.setAttribute('width', '100%');
         img.setAttribute('id', 'nasa-image');
         document.getElementById("main-card").appendChild(img);
-        let status = getNasaImage();
+        getNasaImage(img);
     }
 }
 
@@ -61,19 +59,18 @@ function getRandomMessage(messages) {
 }
 
 function typewriter(message, paragraph_id) {
-    let p = document.createElement('p');
+    var p = document.createElement('p');
     p.setAttribute('id', paragraph_id);
     document.getElementById("main-card").appendChild(p);
 
-    let index = 0;
-    const text = message //+ `gambar di atas itu foto astronomi hari ini btw. judulnya ${data.title}. aku egk tau foto nya seperti apa sih tp semoga kamu suka`;
-    if (text === '') {
+    var index = 0;
+    if (message === '') {
         document.getElementById(paragraph_id).innerHTML += '<br/>';
     }
 
     function writer() {
-        if (index < text.length) {
-            document.getElementById(paragraph_id).innerHTML += text.charAt(index);
+        if (index < message.length) {
+            document.getElementById(paragraph_id).innerHTML += message.charAt(index);
             index++;
             setTimeout(writer, 100);
         }
@@ -85,7 +82,7 @@ function typewriter(message, paragraph_id) {
 async function displayMessage(type) {
     const messages = await getMessages(type);
     if (type === 'YmlydGhkYXk') {
-        const [is_pipit_day, key] = isPipitDay(new Date());
+        let [is_pipit_day, key] = isPipitDay(new Date());
         if (is_pipit_day) {
             let paragraph_index = 0;
             for (const message of messages[key]) {
@@ -101,7 +98,7 @@ async function displayMessage(type) {
         }
 
     } else {
-        const message = getRandomMessage(messages);
+        let message = getRandomMessage(messages);
         typewriter(message, 'paragraph-0');
     }
 }
