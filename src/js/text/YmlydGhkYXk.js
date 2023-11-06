@@ -4,13 +4,13 @@ export
     const messages = {
         13122022: [
             ["A very happy birthday, love."],
-            ["Saya senang memiliki Anda sebagai teman & pasangan Saya saat ini, dan apakah Anda tahu betapa menyenangkannya ketika Anda mengirimkan gambar wajah Anda yang tersenyum."],
-            ["Saya senang memiliki wanita yang merasa puas dan tahu bagaimana menghargai hal-hal kecil dalam hidup."],
+            ["Aku senang memilikimu sebagai teman & pasanganku saat ini, dan apakah kamu tahu betapa menyenangkannya ketika Kamu mengirimkan gambar wajahmu yang tersenyum."],
+            ["Aku senang memiliki wanita yang merasa puas dan tahu bagaimana menghargai hal-hal kecil dalam hidup."],
             [""],
-            ["Maafkan Saya jika hingga saat ini Saya tidak bisa memberikan apa yang Anda inginkan, tapi Saya akan terus berusaha untuk menjadi yang terbaik untuk Anda."],
-            ["Di hari istimewa ini, Saya akan terus mencintai Anda, menghujani Anda dengan semua perhatian dan kasih Sayang yang Anda inginkan dan Saya akan selalu berusaha untuk membuat Anda bahagia."],
+            ["Maafkan ku jika hingga saat ini aku tidak bisa memberikan apa yang kamu inginkan, tapi aku akan terus berusaha untuk menjadi yang terbaik untukmu."],
+            ["Di hari istimewa ini, aku akan terus mencintaimu, menghujanimu dengan semua perhatian dan kasih Sayang yang kamu inginkan dan aku akan selalu berusaha untuk membuatmu bahagia."],
             [""],
-            ["Saya selalu kehabisan kata-kata untuk berterima kasih atas semua yang telah Anda berikan kepada Saya selama ini. Semoga Tuhan selalu memberikan Anda kebahagiaan dan kesuksesan dalam hidup Anda."],
+            ["Aku selalu kehabisan kata-kata untuk berterima kasih atas semua yang telah kamu berikan kepadaku selama ini. Semoga Tuhan selalu memberikanmu kebahagiaan dan kesuksesan dalam hidupmu."],
             [""],
             ["Sekali lagi selamat ulang tahun, Sayang!"],
             [""],
@@ -47,8 +47,8 @@ export
             ["with a lot of love,"],
             ["Mas Nan <3"],
         ],
-        13122026: [
-            ["A very happy 26th birthday, love."],
+        13122025: [
+            ["A very happy 25th birthday, love."],
             ["Aku penasaran apakah tahun ini Kamu masih bersamAku? dan apakah Kamu membuka surat ini?"],
             ["dan mungkin Aku pernah berkata kepadamu untuk membuka surat ini pada setiap hari ulang tahunmu. Aku sangat berharap Kamu membuka dan membacanya. jadi mohon untuk membukanya ya!"],
             [""],
@@ -59,7 +59,7 @@ export
             ["tapi sejujurnya mulai sekarang Aku ragu untuk menggunakan kata-kata tentang cinta dan tentang perasaanku. Aku tidak tahu bagaimana hubungan kita di masa depan. jadi mulai sekarang Aku akan mengatakan perasaanku dengan kata-kata yang lebih sederhana."],
             [""],
             ["Selamat ulang tahun untukmu!"],
-            ["Semoga "],
+            ["Semoga engkau diberikan kesehatan dan menjadi orang yang paling bahagia, dan semoga cita-cita mu dapat terwujud."],
             [""],
             ["with a lot of love,"],
             ["Mas Nan <3"],
