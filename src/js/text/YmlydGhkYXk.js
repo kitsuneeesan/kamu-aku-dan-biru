@@ -19,10 +19,10 @@ export
         ],
         13122023: [
             ["A very happy 23rd birthday, love."],
-            ["Aku ingin tahu apakah Kamu memiliki harapan untuk tahun yang baru dalam hidup Kamu."]
+            ["Aku ingin tahu apakah Kamu memiliki harapan untuk tahun yang baru dalam hidup Kamu."],
             ["Dalam Surat ini, Aku ingin mengirimkan doa terbaik untukmu, semoga Tuhan menjadikan Kamu tumbuh sebagai pribadi yang bijaksana dan belajar banyak hal baik untuk mencapai semua tujuan dan aspirasi Kamu"],
             [""],
-            ["Aku pernah mendengar bahwa ulang tahun adalah tanggal khusus untuk meninjau tahun-tahun sebelumnya. dan Aku tidak ingin membiarkan hari berlalu tanpa mengingatkan betapa Aku mencintaimu dan betapa bahagianya Aku memilikimu pada saat usia Kamu 22 tahun!"]
+            ["Aku pernah mendengar bahwa ulang tahun adalah tanggal khusus untuk meninjau tahun-tahun sebelumnya. dan Aku tidak ingin membiarkan hari berlalu tanpa mengingatkan betapa Aku mencintaimu dan betapa bahagianya Aku memilikimu pada saat usia Kamu 22 tahun!"],
             ["Terima Kasih telah memilihku untuk menjadi bagian dari hidupmu! Kamu adalah permataku, dan Aku mencintaimu lebih dari yang bisa kukatakan"],
             [""],
             ["Maafkan Aku jika hingga saat ini Aku belum bisa memberikan apa yang Kamu inginkan, Percayalah Aku sudah melAkukan yang terbaik. tapi Aku akan terus berusaha menjadi yang terbaik untukmu."],
